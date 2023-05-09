@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.175
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinqLastTake", "LinqLastTake", "{553317CD-E0CA-4333-A89E-0BACCB35CEC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastTakeTests", "LastTakeTests\LastTakeTests.csproj", "{2625DD71-97E8-4472-B468-DEBA1533A712}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2625DD71-97E8-4472-B468-DEBA1533A712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2625DD71-97E8-4472-B468-DEBA1533A712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2625DD71-97E8-4472-B468-DEBA1533A712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2625DD71-97E8-4472-B468-DEBA1533A712}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2625DD71-97E8-4472-B468-DEBA1533A712} = {553317CD-E0CA-4333-A89E-0BACCB35CEC5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD5117D6-7602-4DFE-9759-AFB2C56D8B5C}
+	EndGlobalSection
+EndGlobal
