@@ -14,5 +14,15 @@ namespace LastTakeTests
             }
             return result;
         }
+
+        internal List<int> LastTakeTwo(List<int> sequence)
+        {
+            var result = new List<int>();
+            for (int i = (sequence.Count - 2); i < (sequence.Count); i++)
+            {
+                result.Add(sequence[i]);
+            }
+            return result;
+        }
     }
 }
