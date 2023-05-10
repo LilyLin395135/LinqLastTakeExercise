@@ -3,26 +3,14 @@ using System.Collections.Generic;
 
 namespace LastSkipTests
 {
-    internal class MyLastSkip
+    internal static class MyLastSkip
     {
-        internal List<int> LastSkipThree(List<int> sequence)
+        internal static List<int> LastSkip(this List<int> sequence,int numberWantsToSkip)
         {
             var result = new List<int>();
 
             //1~6→#0,#1,#2,#3,#4,#5
-            for(int i=0; i<= sequence.Count - 1 - 3; i++)
-            {
-                result.Add(sequence[i]);
-            }
-            return result;
-        }
-
-        internal List<int> LastSkipTwo(List<int> sequence)
-        {
-            var result = new List<int>();
-
-            //1~6→#0,#1,#2,#3,#4,#5
-            for (int i = 0; i <= sequence.Count - 1 - 2; i++)
+            for(int i=0; i<= (sequence.Count - 1 - numberWantsToSkip); i++)
             {
                 result.Add(sequence[i]);
             }

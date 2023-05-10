@@ -12,8 +12,7 @@ namespace LastSkipTests
         {
             var sequence = new List<int>() { 1, 2, 3, 4, 5, 6 };
 
-            var lastSkip = new MyLastSkip();
-            var result = lastSkip.LastSkipThree(sequence);
+            var result = sequence.LastSkip(3);
 
             CollectionAssert.AreEqual(new List<int>() { 1,2,3}, result);//改成正常順序
         }
@@ -24,8 +23,7 @@ namespace LastSkipTests
         {
             var sequence = new List<int>() { 1, 2, 3, 4, 5, 6 };
 
-            var lastSkip = new MyLastSkip();
-            var result = lastSkip.LastSkipTwo(sequence);
+            var result = sequence.LastSkip(2);
 
             CollectionAssert.AreEqual(new List<int>() { 1, 2, 3, 4 }, result);//改成正常順序
         }
