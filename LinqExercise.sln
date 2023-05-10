@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.31205.175
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinqLastTake", "LinqLastTake", "{553317CD-E0CA-4333-A89E-0BACCB35CEC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastTakeTests", "LastTakeTests\LastTakeTests.csproj", "{2625DD71-97E8-4472-B468-DEBA1533A712}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LastTakeTests", "LastTakeTests\LastTakeTests.csproj", "{2625DD71-97E8-4472-B468-DEBA1533A712}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinqLastSkip", "LinqLastSkip", "{444B2B19-4816-40D4-BB50-0423C4BFCBBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastSkipTests", "LastSkipTests\LastSkipTests.csproj", "{EA0E5872-BF4A-4478-95C1-D3E50EE09493}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,17 @@ Global
 		{2625DD71-97E8-4472-B468-DEBA1533A712}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2625DD71-97E8-4472-B468-DEBA1533A712}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2625DD71-97E8-4472-B468-DEBA1533A712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0E5872-BF4A-4478-95C1-D3E50EE09493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0E5872-BF4A-4478-95C1-D3E50EE09493}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0E5872-BF4A-4478-95C1-D3E50EE09493}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0E5872-BF4A-4478-95C1-D3E50EE09493}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2625DD71-97E8-4472-B468-DEBA1533A712} = {553317CD-E0CA-4333-A89E-0BACCB35CEC5}
+		{EA0E5872-BF4A-4478-95C1-D3E50EE09493} = {444B2B19-4816-40D4-BB50-0423C4BFCBBE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DD5117D6-7602-4DFE-9759-AFB2C56D8B5C}
