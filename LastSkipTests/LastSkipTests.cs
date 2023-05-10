@@ -25,7 +25,18 @@ namespace LastSkipTests
 
             var result = sequence.LastSkip(2);
 
-            CollectionAssert.AreEqual(new List<int>() { 1, 2, 3, 4 }, result);//改成正常順序
+            CollectionAssert.AreEqual(new List<int>() { 1, 2, 3, 4 }, result);
+        }
+
+        //情境二、跳過字串集合最後四個值。
+        [TestMethod]
+        public void SkipLastFourWords()
+        {
+            var words = new List<string>() { "Bottle","Cell Phone" ,"Book","Bag","Ear Phone"};
+
+            var result = words.LastSkipForString(4);
+
+            CollectionAssert.AreEqual(new List<string>() { "Bottle" }, result);//卡在算錯剩下的word是哪些
         }
     }
 }

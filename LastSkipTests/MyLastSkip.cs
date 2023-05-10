@@ -16,5 +16,17 @@ namespace LastSkipTests
             }
             return result;
         }
+
+        internal static List<string> LastSkipForString(this List<string> words, int numberWantsToSkip)
+        {
+            var result = new List<string>();
+
+            //1~6→#0,#1,#2,#3,#4,#5
+            for (int i = 0; i <= (words.Count - 1 - numberWantsToSkip); i++)
+            {
+                result.Add(words[i]);
+            }
+            return result;
+        }
     }
 }
