@@ -13,7 +13,7 @@ namespace LastTakeTests
             var sequence = new List<int>() { 1, 2, 3, 4, 5, 6};
 
             var lastTake = new MyLastTake();
-            var result = lastTake.LastTakeThree(sequence);
+            var result = lastTake.LastTakeNumber(sequence,3);
 
             CollectionAssert.AreEqual(new List<int>{ 4, 5, 6 }, result);//卡在這裡，因為結果是集合，要用CollectionAssert而非Assert
         }
@@ -25,9 +25,9 @@ namespace LastTakeTests
             var sequence = new List<int>() { 1, 2, 3, 4, 5, 6 };
 
             var lastTake = new MyLastTake();
-            var result = lastTake.LastTakeTwo(sequence);
+            var result = lastTake.LastTakeNumber(sequence,2);
 
-            CollectionAssert.AreEqual(new List<int> { 5, 6 }, result);//卡在這裡，因為結果是集合，要用CollectionAssert而非Assert
+            CollectionAssert.AreEqual(new List<int> { 5, 6 }, result);
         }
     }
 }
