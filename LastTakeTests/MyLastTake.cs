@@ -5,25 +5,14 @@ namespace LastTakeTests
 {
     internal static class MyLastTake
     {
-        internal static List<int> LastTakeNumber( this List<int> sequence,int number)//+this參數就不用放sequence
+        internal static List<T> LastTake<T>( this List<T> resources,int number)//LastTake也要加<T>
         {
-            var result = new List<int>();
-            for(int i= (sequence.Count-number); i< (sequence.Count); i++)
+            var result = new List<T>();
+            for(int i= (resources.Count-number); i< (resources.Count); i++)
             {
-                result.Add(sequence[i]);
+                result.Add(resources[i]);
             }
             return result;
         }
-
-        internal static List<char> LastTakeChar(this List<char> sequence, int number)//+this參數就不用放sequence
-        {
-            var result = new List<char>();
-            for (int i = (sequence.Count - number); i < (sequence.Count); i++)
-            {
-                result.Add(sequence[i]);
-            }
-            return result;
-        }
-
     }
 }
