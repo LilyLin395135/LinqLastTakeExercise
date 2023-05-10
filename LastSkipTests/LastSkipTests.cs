@@ -15,7 +15,7 @@ namespace LastSkipTests
             var lastSkip = new MyLastSkip();
             var result = lastSkip.LastSkipThree(sequence);
 
-            CollectionAssert.AreEqual(new List<int>() { 3,2,1}, result);//卡在這裡序列要倒過來
+            CollectionAssert.AreEqual(new List<int>() { 1,2,3}, result);//改成正常順序
         }
     }
 }
