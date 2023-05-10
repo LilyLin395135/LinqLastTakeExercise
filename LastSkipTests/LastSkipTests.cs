@@ -34,7 +34,7 @@ namespace LastSkipTests
         {
             var words = new List<string>() { "Bottle","Cell Phone" ,"Book","Bag","Ear Phone"};
 
-            var result = words.LastSkipForString(4);
+            var result = words.LastSkip(4);
 
             CollectionAssert.AreEqual(new List<string>() { "Bottle" }, result);//卡在算錯剩下的word是哪些
         }

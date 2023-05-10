@@ -5,28 +5,16 @@ namespace LastSkipTests
 {
     internal static class MyLastSkip
     {
-        internal static List<int> LastSkip(this List<int> sequence,int numberWantsToSkip)
+        internal static List<T> LastSkip<T>(this List<T> resources,int numberWantsToSkip)
         {
-            var result = new List<int>();
+            var result = new List<T>();
 
-            //1~6→#0,#1,#2,#3,#4,#5
-            for(int i=0; i<= (sequence.Count - 1 - numberWantsToSkip); i++)
+            for(int i=0; i<= (resources.Count - 1 - numberWantsToSkip); i++)
             {
-                result.Add(sequence[i]);
+                result.Add(resources[i]);
             }
             return result;
         }
 
-        internal static List<string> LastSkipForString(this List<string> words, int numberWantsToSkip)
-        {
-            var result = new List<string>();
-
-            //1~6→#0,#1,#2,#3,#4,#5
-            for (int i = 0; i <= (words.Count - 1 - numberWantsToSkip); i++)
-            {
-                result.Add(words[i]);
-            }
-            return result;
-        }
     }
 }
