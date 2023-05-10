@@ -28,6 +28,7 @@ namespace LastTakeTests
         }
 
         //情境三、取出字元集合最後四個值
+        [TestMethod]
         public void GivenCharTakeLastFour()
         {
             var charactors = new List<char> { 'a', 'b', 'c', 'd', 'e', 'f' };
