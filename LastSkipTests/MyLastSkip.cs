@@ -16,5 +16,17 @@ namespace LastSkipTests
             }
             return result;
         }
+
+        internal List<int> LastSkipTwo(List<int> sequence)
+        {
+            var result = new List<int>();
+
+            //1~6→#0,#1,#2,#3,#4,#5
+            for (int i = 0; i <= sequence.Count - 1 - 2; i++)
+            {
+                result.Add(sequence[i]);
+            }
+            return result;
+        }
     }
 }
