@@ -26,5 +26,15 @@ namespace LastTakeTests
 
             CollectionAssert.AreEqual(new List<int> { 5, 6 }, result);
         }
+
+        //情境三、取出字元集合最後四個值
+        public void GivenCharTakeLastFour()
+        {
+            var charactors = new List<char> { 'a', 'b', 'c', 'd', 'e', 'f' };
+            
+            var result = charactors.LastTakeChar(4);
+
+            CollectionAssert.AreEqual(new List<char> { 'c', 'd', 'e', 'f' }, result);
+        }
     }
 }

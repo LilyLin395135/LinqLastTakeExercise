@@ -15,6 +15,15 @@ namespace LastTakeTests
             return result;
         }
 
-        
+        internal static List<char> LastTakeChar(this List<char> sequence, int number)//+this參數就不用放sequence
+        {
+            var result = new List<char>();
+            for (int i = (sequence.Count - number); i < (sequence.Count); i++)
+            {
+                result.Add(sequence[i]);
+            }
+            return result;
+        }
+
     }
 }
