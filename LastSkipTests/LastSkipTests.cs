@@ -6,24 +6,23 @@ namespace LastSkipTests
     [TestClass]
     public class LastSkipTests
     {
-        //情境一、跳過數字集合最後三個值。
-        [TestMethod]
+        //集合抽出來寫成欄位
+        private List<int>_sequence=new List<int>{ 1, 2, 3, 4, 5, 6 };
+
+    //情境一、跳過數字集合最後三個值。
+    [TestMethod]
         public void SkipLastThree()
         {
-            var sequence = new List<int>() { 1, 2, 3, 4, 5, 6 };
+            var result = _sequence.LastSkip(3);
 
-            var result = sequence.LastSkip(3);
-
-            CollectionAssert.AreEqual(new List<int>() { 1,2,3}, result);//改成正常順序
+            CollectionAssert.AreEqual(new List<int>() { 1,2,3}, result);
         }
 
         //情境二、跳過數字集合最後兩個值。
         [TestMethod]
         public void SkipLastTwo()
         {
-            var sequence = new List<int>() { 1, 2, 3, 4, 5, 6 };
-
-            var result = sequence.LastSkip(2);
+            var result = _sequence.LastSkip(2);
 
             CollectionAssert.AreEqual(new List<int>() { 1, 2, 3, 4 }, result);
         }
