@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace LastTakeTests
 {
-    internal class MyLastTake
+    internal static class MyLastTake
     {
-        internal List<int> LastTakeNumber(List<int> sequence,int number)//是不是不用Func?
+        internal static List<int> LastTakeNumber( this List<int> sequence,int number)//+this參數就不用放sequence
         {
             var result = new List<int>();
             for(int i= (sequence.Count-number); i< (sequence.Count); i++)
