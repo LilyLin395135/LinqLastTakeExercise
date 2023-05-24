@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LastTakeTests
+namespace MyLinq
 {
-    internal static class MyLastTake
+    public static class MyLastTake
     {
-        internal static List<T> LastTake<T>( this IEnumerable<T> resources,int number)//LastTake也要加<T>
+        public static List<T> LastTake<T>(this IEnumerable<T> resources, int number)//LastTake也要加<T>
         {
             //var result = new List<T>();
             //for(int i= (resources.Count()-number); i< (resources.Count()); i++)//改成IEnumerable，無法直接用.Count要using LINQ

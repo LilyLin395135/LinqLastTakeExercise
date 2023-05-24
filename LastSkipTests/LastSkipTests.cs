@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MyLinq;
 using System.Collections.Generic;
 
 namespace LastSkipTests
@@ -15,7 +16,7 @@ namespace LastSkipTests
         {
             var result = _sequence.LastSkip(3);
 
-            CollectionAssert.AreEqual(new List<int>() { 1,2,3}, result);
+            CollectionAssert.AreEqual(new List<int>() { 1, 2, 3 }, result);
         }
 
         //情境二、跳過數字集合最後兩個值。
